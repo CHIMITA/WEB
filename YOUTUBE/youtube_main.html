@@ -3,6 +3,15 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport", content="width=device-width, initial-scale=1.0"/>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/2d323a629b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="youtube_main.js" defer></script>
     <title>YOUTUBE</title>
 </head>
 <body>
@@ -26,27 +35,87 @@
     <!--METADATA-->
     <div class="metadata">
         <ul class="hashtags">
-            <li>#Dreamcoding</li>
-            <li>#Dreamcoders</li>
+            <li>#Clonecoding</li>
+            <li>#Clonecoders</li>
             <li>#CHIMITA</li>
         </ul>
     </div>
     <div class="tittleAndButton">
         <span class="tittle">Clone Coding</span>
-        <button class="moreBtn"><i class="fas fa-caret-down"></i></button>
+        <button class="moreBtn">
+            <i class="fas fa-caret-down"></i>
+        </button>
     </div>
     <div class="viwes">
         <span class="viwes">1M views 1 month ago</span>
     </div>
-    <div class="actions">
-        <li><button></button></li>
-        <li><button></button></li>
-        <li><button></button></li>
-        <li><button></button></li>
-        <li><button></button></li>
-    </div>
-    <div class="channel"></div>
+    <!--ACTIONS BUTTONS-->
+    <ul class="actions">
+        <li>
+            <button>
+                <i class="active fas fa-thumbs-up"></i>
+                <span>2k</span>
+            </button>
+        </li>
+        <li>
+            <button>
+                <i class="fas fa-thumbs-down"></i>
+                <span>2</span>
+            </button>
+        </li>
+        <li>
+            <button>
+                <i class="fas fa-share"></i>
+                <span>SHARE</span>
+            </button>
+        </li>
+        <li>
+            <button>
+                <i class="fas fa-download"></i><span>SAVE</span>
+            </button>
+        </li>
+    </ul>
+
+    <!--CHANNEL DESCRIPTION-->
+    <div class="channel">
+        <div class="metadata">
+          <img src="img/upa.png" alt="" />
+          <div class="info">
+            <span class="name">CHIMITA</span>
+            <span class="subscribers">1M SUBCRIBERS</span>
+          </div>
+        </div>
+        <button class="subscribe">SUBSCRIBE</button>
+      </div>
     </section>
-    <section class="UpNext"></section>
+
+    <!--UP NEXT-->
+    <section class="upNext">
+        <span class="title">UP NEXT</span>
+    <ul>
+        <li class="item">
+            <div class="img"><img src="img/upa.png" alt=""/></div>
+            <div class="itemInfo">
+                <span class="title">우파루파의 VLOG</span>
+                <span class="name">우파루파</span>
+                <span class="views">85k</span>
+            </div>
+            <button class="moreBtn">
+                <i class="fas fa-angle-double-right"></i>
+            </button>
+        </li>
+        <li class="item">
+            <div class="img"><img src="img/maxresdefault.png" alt=""></div>
+            <div class="itemInfo">
+                <span class="title">안녕히계세요 여러분</span>
+                <span class="name">이누야샤 여친</span>
+                <span class="views">50k</span>
+            </div>
+            <button class="moreBtn">
+                <i class="fas fa-angle-double-right"></i>
+            </button>
+        </li>
+    </ul>
+</section>
 </body>
 </html>
