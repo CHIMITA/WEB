@@ -16,34 +16,28 @@ document.querySelector('#modal_btn').addEventListener('click', modalOpen);
 document.querySelector('.modal_close').addEventListener('click', modalClose);
 
 //login
-function my_status(){
-    var status = 0; 
+/*
+function login_check() {
+    const ID_s = 'admin';
+    const PW_s = 'admin1234';
 
-    if (status == 0){
-        alert("잠깐! 로그인 먼저 해주세요 :)")
+    var id = document.getElementById('ID').value;
+    var pw = document.getElementById('PW').value;
+    var name = document.getElementById('name').value;
 
+    if (ID_s === id && PW_s === pw){
+        alert("로그인 성공" + name + "님 환영합니다!");
+        location.href = "../Html/main.html";
     }
+    else {
+        alert("ID와 PW 가 맞지 않습니다. 다시 시도해주세요 :D");
+        location.href = "../Html/login.html";
+    }
+
 }
+*/
 
-const SignUp = () => {
-    const [modal, setModal] = useState(false);
-  
-    return (
-      <>
-        <div
-          className="signUp"
-          onClick={() => {
-            setModal(true);
-          }}
-        >
-          회원가입창
-        </div>
-        <div className="modal">
-          {modal ? <Modal modal={modal} setModal={setModal} /> : null}
-        </div>
-      </>
-    );
-  };
+function input_box() {
 
-
+}
 

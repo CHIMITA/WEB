@@ -1,65 +1,53 @@
-
-#modal_btn {
-    width: 500px;
-    height: 100px;
+@font-face {
+    font-family: "RecipeKorea";
+    src: url("../fonts/RecipekoreaFONT.otf") format("opentype");
+    color: #262626;
+    
 }
 
-.modal_wrap {
-    display: none;
-    width: 500px;
-    height: 500px;
-    position: absolute;
-    border: 2px solid black;
-    top:50%;
-    left: 50%;
-    margin: -250px 0 0 -250px;
-    background:#eee;
-    z-index: 2;
-}
-.modal_background {
-    display: none;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color:rgba(0, 0,0, 0.5);
-    top:0;
-    left: 0;
-    z-index: 1;
-}
-.modal_close {
-    width: 26px;
-    height: 26px;
-    position: absolute;
-    top: 10px;
-    right: 10px;
+@font-face {
+    font-family: "EF_Diary";
+    src: url("../fonts/EF_Diary.ttf") format("opentype");
 }
 
-.modal_wrap .text {
-    margin-top: 45px;
-    margin-left: 5px;
+@font-face {
+    font-family: "Gilbeot";
+    src: url("../fonts/Gilbeot_Rainbow.otf") format("opentype");
 }
 
-.modal_close .closeImg {
-    display: block;
-    width: 100%;
-    height: 100%;
+@font-face {
+    font-family: 'IM_Hyemin-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Bold.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Y_Spotlight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/Y_Spotlight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 .text-feild{
+    margin: auto;
+    text-align: center;
     font-size: 13px;
     border: none;
 }
 
-.submit-btn{
+.btn{
     font-size: 13px;
     border: none;
 }
 
 /*main_menu*/
 
+
+
 .main_bar{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
     background-color: #fff983;
@@ -77,8 +65,258 @@
     padding: 8px 30px;
 }
 
-main{
+.main {
     text-align: center;
     text-decoration: none;
     color: var(--text-color);
+}
+
+.menu_bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #fff983;
+    padding: 8px 12px;
+} 
+
+.menu_bar a:hover {
+    background-color: white;
+    border-radius: 3px;
+}
+
+.menu_content {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding-left: 0;
+    font-family: "RecipeKorea";
+    color: #4F4120;
+}
+.menu_content li {
+    text-align: center;
+    padding: 8px 30px;
+}
+
+.menu_content li:hover {
+    background-color: white;
+    border-radius: 3px;
+}
+
+
+.menu_content i {
+    align-items: center;
+    color: #171717;
+    padding-left: 0;
+}
+
+body { 
+    margin: 0;
+    background-color: var(--bodybackground-color);
+}
+
+a { 
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text-color);
+}
+/*
+.login {
+    margin-top: 50px;
+    text-align: center;
+    justify-content: center
+}
+
+.login input:hover {
+    background-color: rgb(103, 29, 29);
+    border-radius: 3px;
+}
+*/
+
+/*my_vilage*/
+.my_pro {
+    justify-content: center;
+    text-align: center;
+    background-image: url("../img/background.png");
+}
+
+hr {
+    width : 50%;
+    height: 2px;
+    margin: auto;
+    margin-bottom: 15px;
+    background: #4F4120;
+    border: 0px;
+}
+
+.text-feild-pro {
+    margin: 80px;
+    margin-top: 20px;
+    text-align: center;
+    font-family: "IM_Hyemin-Bold";
+    font-size: 15px;
+    border: none;
+    color: #262626;
+    background-image: url("../img/paper.png");
+}
+
+.text-feild-pro b {
+    font-size: 18px;
+    color: #252525;
+    background:linear-gradient(to top, #FFE400 50%, transparent 50%);
+
+}
+
+.icon a {
+    display: inline;
+    white-space: nowrap;
+}
+
+/*we_village*/
+.we_vil {
+    position: relative;
+    background-image: url("../img/background.png");
+}
+
+h2 {
+    margin-top: 20px;
+    text-align: center;
+    font-family: "RecipeKorea";
+    color: #ffffff;
+}
+
+h3 {
+    text-align: center;
+    font-family: "RecipeKorea";
+    color: #191919;
+}
+
+.ctf_name {
+    margin: 80px;
+    margin-bottom: 20px;
+    justify-content: center;
+    text-align: center;
+    background-image: url("../img/paper.png");
+    
+}
+
+.ctf_name a {
+    display: block;
+    text-align: left;
+    margin: auto;
+    margin-top: 3px;
+    margin-left: 320px;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 15px;
+}
+
+.ctf_name b{
+    background:linear-gradient(to top, #FFE400 40%, transparent 50%);
+}
+
+.ctf_date {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    left: 940px;
+    top: 338px;
+    text-align: right;
+    margin-right: 320px;
+}
+
+.ctf_date p {
+    margin: auto;
+    margin-top: 3.5px;
+    font-size: 15px;
+}
+
+.v-line{
+    border-left: thick solid #4F4120;
+    border-width: 2px;
+    height: 25%;
+    top: 328px;
+    right: 470px;
+    position: absolute;
+}
+
+/*senior_village*/
+.senior_vil {
+    background-image: url("../img/background.png");
+}
+
+.experiences {
+    margin: 80px;
+    margin-bottom: 20px;
+    justify-content: center;
+    background-image: url("../img/paper.png");   
+}
+
+.experiences b {
+    margin-left: 5px;
+    text-align: left;
+    font-size: 25px;
+    font-family: 'IM_Hyemin-Bold';
+}
+
+.experiences a {
+    /*줄바꿈 제거*/
+    display: inline;
+    white-space: nowrap;
+}
+
+.experiences i {
+    margin: auto;
+    margin-top: 15px;
+    color: #262626;
+}
+
+/*chat_senior*/
+
+
+#chat .chat_room {
+    position: relative;
+    background-color: #fff983;
+    margin: auto;
+    margin-top: 50px;
+    width: 700px;
+    height: 600px;
+}
+
+#chat p {
+    font-family: 'RecipeKorea';
+    font-size: 20px;
+    text-align: center;
+}
+
+#chat .input_box {
+    position: absolute;
+    width: 700px;
+    height: auto;
+    bottom: 0;
+}
+
+#chat .input_box #text_input{
+    width: 690px;
+    height: auto;
+}
+
+#chat .send i {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    right: 0px;
+    background-color: #5f9659;
+    padding: 3px;
+    
+}
+
+#chat .send:hover {
+   color: #fff983;
+}
+
+.village_gif {
+    text-align: center;
 }
