@@ -3,6 +3,7 @@
     <head>
         <link rel="stylesheet" href="../css/main.css">
         <script src="https://kit.fontawesome.com/e656d76bb3.js" crossorigin="anonymous"></script>
+        <script src="../JS/main.js"></script>
     </head>
     <body>
         <div class="menu_bar">
@@ -20,16 +21,18 @@
         <div id="chat">
             <div class="chat_room">
                 <br>
-                <p>선배들과 이야기 해봐요!</p>
+                <h3>선배들과 이야기 해봐요!</h3>
                 <div class="input_box">
                     <input type="text" name="text_in" id="text_input">
-
                     <div class="send">
-                        <i class="fa-solid fa-paper-plane"></i>
+                        <button type="button" id="send_btn" class="fa-solid fa-paper-plane" onclick="send(text_input.value)"></button>
                     </div>
+                </div>
+                <div class="chat_box" id="chat_box">
 
                 </div>
             </div>
         </div>
+        
     </body>
 </html>

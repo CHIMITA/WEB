@@ -1,19 +1,3 @@
-// 모달 열기
-function modalOpen() {
-    document.querySelector('.modal_wrap').style.display = 'block';
-    document.querySelector('.modal_background').style.display = 'block';
-}
-
-// 모달 끄기
-function modalClose() {
-    document.querySelector('.modal_wrap').style.display = 'none';
-    document.querySelector('.modal_background').style.display = 'none';
-}
-
-
-//버튼 클릭리스너 달기
-document.querySelector('#modal_btn').addEventListener('click', modalOpen);
-document.querySelector('.modal_close').addEventListener('click', modalClose);
 
 //login
 /*
@@ -37,7 +21,28 @@ function login_check() {
 }
 */
 
-function input_box() {
+function send(message){
 
+    const element = document.getElementById('chat');
+    //const content = document.createTextNode(message);
+
+    // new div 생성
+    const newP = document.createElement('p');
+   
+    // new div에 추가할 text node 생성
+    const newText = document.createTextNode(message);
+  
+    // text node를 new div에 추가
+    newP.appendChild(newText);
+  
+    // new div를 기존 div에 추가
+    element.appendChild(newP);
+    
+    document.querySelector("#chat_box").append(newP);
+
+  
 }
 
+function loading(){
+    location.href = "../Html/my_vil.html";
+}

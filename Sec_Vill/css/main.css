@@ -42,9 +42,6 @@
 }
 
 /*main_menu*/
-
-
-
 .main_bar{
     display: flex;
     justify-content: space-between;
@@ -75,7 +72,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    line-height: 25px;
     background-color: #fff983;
     padding: 8px 12px;
 } 
@@ -89,13 +86,16 @@
     list-style: none;
     display: flex;
     align-items: center;
-    margin: 0;
-    padding-left: 0;
+    justify-content: center;
+    margin: auto;
+    vertical-align: middle;
     font-family: "RecipeKorea";
+    font-size: 22px;
     color: #4F4120;
 }
 .menu_content li {
     text-align: center;
+    vertical-align: middle;
     padding: 8px 30px;
 }
 
@@ -104,10 +104,10 @@
     border-radius: 3px;
 }
 
-
 .menu_content i {
     align-items: center;
     color: #171717;
+    font-size: 20px;
     padding-left: 0;
 }
 
@@ -199,8 +199,9 @@ h2 {
 
 h3 {
     text-align: center;
-    font-family: "RecipeKorea";
-    color: #191919;
+    margin-top: 0px;
+    font-family: "Y_Spotlight";
+    color: #222222;
 }
 
 .ctf_feild {
@@ -228,6 +229,8 @@ h3 {
     margin: auto;
     text-align: left;
     color: var(--text-color);
+    font-family: "Y_Spotlight";
+    color: #222222;
     font-size: 15px;
 }
 
@@ -249,32 +252,33 @@ h3 {
     text-align: right;
     margin-top: 0px;
     margin-bottom: 0px;
+    font-family: "Y_Spotlight";
+    font-size: 15px;
+    color: #222222;
 }
 
 /*senior_village*/
 .senior_vil {
     background-image: url("../img/background.png");
+    padding-bottom: 10%;
 }
 
 .experiences {
     margin: 80px;
     margin-bottom: 20px;
-    justify-content: center;
+    height: 300px;
+    text-align: center;
     background-image: url("../img/paper.png");   
 }
 
 .experiences b {
+    margin: auto;
     margin-left: 5px;
-    text-align: left;
+    text-align: center;
     font-size: 25px;
     font-family: 'IM_Hyemin-Bold';
 }
 
-.experiences a {
-    /*줄바꿈 제거*/
-    display: inline;
-    white-space: nowrap;
-}
 
 .experiences i {
     margin: auto;
@@ -294,17 +298,12 @@ h3 {
     height: 600px;
 }
 
-#chat p {
-    font-family: 'RecipeKorea';
-    font-size: 20px;
-    text-align: center;
-}
-
 #chat .input_box {
     position: absolute;
     width: 700px;
     height: auto;
     bottom: 0;
+    z-index: 3;
 }
 
 #chat .input_box #text_input{
@@ -312,20 +311,61 @@ h3 {
     height: auto;
 }
 
-#chat .send i {
+#chat button {
     position: absolute;
     display: block;
-    bottom: 0;
+    bottom: 0.3px;
     right: 0px;
     background-color: #5f9659;
-    padding: 3px;
-    
+    padding: 2px;
+    z-index: 2;
 }
 
-#chat .send:hover {
+#chat button:hover {
    color: #fff983;
 }
 
-.village_gif {
+.chat_box {
+    position: absolute;
+    display: inline-block;
+    justify-content: right;
+    width: 700px;
+    height: 520px;
+    
+    background-image: url('../img/paper.png');
+    overflow: auto; 
+}
+.chat_box::-webkit-scrollbar {
+    width: 10px;
+}
+
+.chat_box::-webkit-scrollbar-thumb {
+    background-color: #2f3542;
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+}
+
+.chat_box::-webkit-scrollbar-track {
+    background-color: grey;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 5px white;
+}
+
+.chat_box p {
+    text-align: right;
+    font-family: "IM_Hyemin-Bold";
+    font-size: 18px;
+    margin: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    z-index: 1;
+
+}
+
+
+.loading {
     text-align: center;
+    height: 1000px;
+    background-color: #26262688;
 }
