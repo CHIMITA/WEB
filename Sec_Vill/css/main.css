@@ -136,9 +136,10 @@ a {
 */
 
 /*my_vilage*/
-.my_pro {
+.my_vil {
     justify-content: center;
     text-align: center;
+    padding-bottom: 10%;
     background-image: url("../img/background.png");
 }
 
@@ -151,15 +152,22 @@ hr {
     border: 0px;
 }
 
-.text-feild-pro {
+.my_vil_feild {
     margin: 80px;
+    
+    justify-content: center;
+    text-align: center;
+    background-image: url("../img/paper.png");
+}
+
+.text-feild-pro {
     margin-top: 20px;
     text-align: center;
     font-family: "IM_Hyemin-Bold";
     font-size: 15px;
     border: none;
     color: #262626;
-    background-image: url("../img/paper.png");
+   
 }
 
 .text-feild-pro b {
@@ -175,8 +183,10 @@ hr {
 }
 
 /*we_village*/
-.we_vil {
-    position: relative;
+.we_vil { 
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 10%;
     background-image: url("../img/background.png");
 }
 
@@ -193,53 +203,52 @@ h3 {
     color: #191919;
 }
 
-.ctf_name {
+.ctf_feild {
+    position: relative;
     margin: 80px;
-    margin-bottom: 20px;
-    justify-content: center;
-    text-align: center;
+    height: 600px;
     background-image: url("../img/paper.png");
-    
+}
+
+.ctf_feild i {
+    text-align: center;
+    color: #5f1919;
+}
+
+.ctf_name {
+    position: absolute;
+    width: 20%;
+    z-index: 2;
+    margin-left: 25%;
+    display: block;
+
 }
 
 .ctf_name a {
-    display: block;
-    text-align: left;
     margin: auto;
-    margin-top: 3px;
-    margin-left: 320px;
-    text-decoration: none;
+    text-align: left;
     color: var(--text-color);
     font-size: 15px;
 }
 
 .ctf_name b{
+    text-align: left;
     background:linear-gradient(to top, #FFE400 40%, transparent 50%);
 }
 
+
 .ctf_date {
     position: absolute;
-    width: 100px;
-    height: auto;
-    left: 940px;
-    top: 338px;
-    text-align: right;
-    margin-right: 320px;
+    z-index: 1;
+    width: 25%;
+    display: inline-block;
+
 }
 
 .ctf_date p {
-    margin: auto;
-    margin-top: 3.5px;
-    font-size: 15px;
-}
-
-.v-line{
-    border-left: thick solid #4F4120;
-    border-width: 2px;
-    height: 25%;
-    top: 328px;
-    right: 470px;
-    position: absolute;
+    text-align: right;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 /*senior_village*/
