@@ -46,11 +46,41 @@ function loading(){
     location.href = "../Html/my_vil.html";
 }
 
-var job= new Array('악성코드 분석 전문가', '디지털 포렌식 수사관', '모의 해킹 전문가', '보안 컨설턴트');
 
-document.write(randomItem(job), '');
 
-// 위의 주어진 배열(Array)에서 무작위 요소 1개를 반환한다.
-function randomItem(a) {
-  return a[Math.floor(Math.random() * a.length)];
+var job= new Array('악성코드 분석 전문가', '디지털 포렌식 수사관', '모의 해킹 전문가', '보안 컨설턴트', '보안관제전문가', '침해사고 대응 전문가', '기업 내 보안 담당자');
+
+
+function pick_job(a){
+    const user_name = prompt("이름을 입력해주세요!", "OOO");
+    alert(user_name + "님이 뽑은 직업은 " + a[Math.floor(Math.random() * a.length)] + "입니다!!");
+
+    // 위의 주어진 배열(Array)에서 무작위 요소 1개 추출
+
 }
+
+/*
+const myAudio = new Audio();
+myAudio.src = "../audio/cat_foot.mp3";
+
+const btnPlay = document.getElementById("play_btn");
+const btnPause = document.getElementById("btnPause");
+const btnStop = document.getElementById("btnStop");
+
+// 재생 버튼
+btnPlay.onclick = function () {
+    myAudio.play();
+    myAudio.volume = 1;
+}
+
+// 일시정지 버튼
+btnPause.onclick = function () {
+    myAudio.pause();
+}
+
+// 정지 버튼
+btnStop.onclick = function () {
+    myAudio.pause();
+    myAudio.currentTime = 0; 
+}
+*/
