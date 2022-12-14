@@ -45,3 +45,12 @@ function send(message){
 function loading(){
     location.href = "../Html/my_vil.html";
 }
+
+var job= new Array('악성코드 분석 전문가', '디지털 포렌식 수사관', '모의 해킹 전문가', '보안 컨설턴트');
+
+document.write(randomItem(job), '');
+
+// 위의 주어진 배열(Array)에서 무작위 요소 1개를 반환한다.
+function randomItem(a) {
+  return a[Math.floor(Math.random() * a.length)];
+}

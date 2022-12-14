@@ -363,9 +363,48 @@ h3 {
 
 }
 
-
 .loading {
     text-align: center;
     height: 1000px;
     background-color: #26262688;
+}
+
+/*junior_village*/
+.junior_vil {
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 10%;
+    background-image: url("../img/background.png");
+}
+
+.junior_felid {
+    margin: 80px;
+    margin-bottom: 20px;
+    height: 300px;
+    text-align: center;
+    background-image: url("../img/paper.png");  
+}
+
+.junior_felid p {
+    text-align: center;
+    font-family: "IM_Hyemin-Bold";
+    font-size: 24px;
+}
+
+.junior_felid button {
+    border: none;
+}
+
+.junior_felid button:hover {
+    border: none;
+    color: #5f9659;
+}
+
+/*security_test*/
+.test_felid {
+    margin: 80px;
+    margin-bottom: 20px;
+    height: 300px;
+    text-align: center;
+    background-image: url("../img/paper.png");  
 }
