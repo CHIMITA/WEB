@@ -1,4 +1,25 @@
 
+//login
+/*
+function login_check() {
+    const ID_s = 'admin';
+    const PW_s = 'admin1234';
+
+    var id = document.getElementById('ID').value;
+    var pw = document.getElementById('PW').value;
+    var name = document.getElementById('name').value;
+
+    if (ID_s === id && PW_s === pw){
+        alert("로그인 성공" + name + "님 환영합니다!");
+        location.href = "../Html/main.html";
+    }
+    else {
+        alert("ID와 PW 가 맞지 않습니다. 다시 시도해주세요 :D");
+        location.href = "../Html/login.html";
+    }
+
+}
+*/
 function send(message){
 
     const element = document.getElementById('chat');
