@@ -122,15 +122,6 @@ a {
     text-decoration: none;
     color: var(--text-color);
 }
-
-.audio {
-    align-items: center;
-}
-
-.audio button:hover {
-    color: #5f9659
-}
-
 /*
 .login {
     margin-top: 50px;
@@ -268,8 +259,6 @@ h3 {
 
 /*senior_village*/
 .senior_vil {
-    justify-content: center;
-    text-align: center;
     background-image: url("../img/background.png");
     padding-bottom: 10%;
 }
@@ -277,7 +266,7 @@ h3 {
 .experiences {
     margin: 80px;
     margin-bottom: 20px;
-    height: 600px;
+    height: 300px;
     text-align: center;
     background-image: url("../img/paper.png");   
 }
@@ -390,8 +379,7 @@ h3 {
 
 .junior_felid {
     margin: 80px;
-    margin-bottom: 20px;
-    height: 520px;
+    height: 600px;
     text-align: center;
     background-image: url("../img/paper.png");  
 }
@@ -414,8 +402,7 @@ h3 {
 /*security_test*/
 .test_felid {
     margin: 80px;
-    margin-bottom: 20px;
-    height: 300px;
+    height: 600px;
     text-align: center;
     background-image: url("../img/paper.png");  
 }
